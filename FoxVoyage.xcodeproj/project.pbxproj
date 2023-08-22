@@ -179,7 +179,6 @@
 		16AF6A0C2A68F37300A3C891 /* Testtt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testtt.swift; sourceTree = "<group>"; };
 		16AF6A102A68F37F00A3C891 /* TestV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestV.swift; sourceTree = "<group>"; };
 		16AF6A122A68F38400A3C891 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
-		16AF6A142A68F39800A3C891 /* filefile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filefile.swift; sourceTree = "<group>"; };
 		16B13ECA2A735E210074B60A /* NearPlaceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearPlaceCardView.swift; sourceTree = "<group>"; };
 		16B13ECE2A7362C10074B60A /* ExploreallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreallView.swift; path = FoxVoyage/Views/TabBar/Explore/ExploreallView.swift; sourceTree = SOURCE_ROOT; };
 		16B13ED22A7403D30074B60A /* WishlistcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistcardView.swift; sourceTree = "<group>"; };
@@ -323,7 +322,6 @@
 		16AF69F12A68F08700A3C891 /* FoxVoyage */ = {
 			isa = PBXGroup;
 			children = (
-				16AF69F82A68F08800A3C891 /* Preview Content */,
 				7274272D2A764DB100D06821 /* KampungTerih.gpx */,
 				7274272E2A764DB100D06821 /* TebingLangit.gpx */,
 				16AF69F62A68F08800A3C891 /* Assets.xcassets */,
@@ -337,6 +335,7 @@
 				16AF6A052A68F0ED00A3C891 /* Services */,
 				16AF6A022A68F0D400A3C891 /* ViewModels */,
 				16AF6A032A68F0E000A3C891 /* Views */,
+				16AF69F82A68F08800A3C891 /* Preview Content */,
 			);
 			path = FoxVoyage;
 			sourceTree = "<group>";
@@ -353,7 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				1625222D2A761EBB0047CC27 /* LocationManager.swift */,
-				16AF6A142A68F39800A3C891 /* filefile.swift */,
 				163A59E42A74D8CB00A861DA /* InformationViewModel.swift */,
 				7217F7AC2A76314F0008E750 /* AppDelegate.swift */,
 				72FEC1872A93243100D5F4BE /* GalleryAccess.swift */,

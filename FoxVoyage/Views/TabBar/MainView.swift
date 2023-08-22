@@ -24,12 +24,10 @@ struct MainView: View {
                 ExploreView()
             }
             
-            
             customTabBar
                 .padding(.bottom, 10)
                 .padding(.horizontal, 16)
         }
-        
     }
 }
 
@@ -37,6 +35,7 @@ extension MainView{
     var customTabBar: some View {
         HStack{
             Spacer()
+            
             Circle()
                 .frame(width: 56, height: 56)
                 .foregroundColor(index == 0 ? Color("Redish400") : .white)

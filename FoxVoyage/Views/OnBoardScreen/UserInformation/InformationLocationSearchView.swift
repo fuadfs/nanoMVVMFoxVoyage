@@ -27,8 +27,18 @@ struct InformationLocationSearchView: View {
                     .frame(maxWidth: 250, alignment: .leading)
                     .foregroundColor(Color("Redish400"))
                 
-                Image(systemName: "multiply")
-                    .foregroundColor(.gray)
+//                if !searchText.isEmpty {
+                    HStack {
+                        Spacer()
+                        Button {
+                            locationManager.searchText = ""
+                        } label: {
+                            Image(systemName: "multiply")
+                        }
+                        .foregroundColor(.secondary)
+                        .padding(.trailing, 4)
+                    }
+//                }
             }
             .padding(.horizontal, 24)
             .padding(.vertical, 0)
@@ -42,9 +52,9 @@ struct InformationLocationSearchView: View {
             .padding(.bottom)
             .padding(.top)
             
-            if let places = locationManager.fetchedPlaces,!places.isEmpty{
+            if let places = locationManager.fetchedPlaces, !places.isEmpty{
                 List{
-                    ForEach(places,id: \.self){place in
+                    ForEach(places, id: \.self){place in
                         Button {
                             if let coordinate = place.location?.coordinate{
                                 locationManager.pickedLocation = .init(latitude: coordinate.latitude, longitude: coordinate.longitude)

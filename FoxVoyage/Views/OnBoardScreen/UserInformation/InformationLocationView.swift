@@ -67,7 +67,7 @@ struct InformationLocationView: View {
                 viewModel.saveUserData(longitude: locationManager.pickedPlaceMark?.location?.coordinate.longitude ?? 0.0, latitude: locationManager.pickedPlaceMark?.location?.coordinate.latitude ?? 0.0)
                 showOnboarding = false
                 router.toRoot()
-            }label:{
+            } label: {
                 HStack{
                     Text("Next")
                         .font(.body)

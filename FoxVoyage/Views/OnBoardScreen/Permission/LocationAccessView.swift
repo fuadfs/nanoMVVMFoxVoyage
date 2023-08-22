@@ -9,8 +9,9 @@ import SwiftUI
 import CoreLocation
 
 struct locationAccessView: View {
-    @State private var locationManager = CLLocationManager()
+    @EnvironmentObject var router: Router
     @State private var locationPermissionStatus: CLAuthorizationStatus = .notDetermined
+    @StateObject var locationManager: LocationManager = .init()
     
     var body: some View {
         VStack{
@@ -34,7 +35,8 @@ struct locationAccessView: View {
             
             VStack{
                 Button("Give Access"){
-                    locationManager.requestLocation()
+                    locationManager.manager.requestLocation()
+                    router.push(.galleryAccess)
                 }
                 .buttonStyle(ButtonOnBoardScreen())
             }

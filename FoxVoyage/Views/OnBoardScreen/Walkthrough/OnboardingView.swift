@@ -69,7 +69,7 @@ struct OnboardingView: View {
                                 )
                         } else {
                             Button{
-                                router.push(.galleryAccess)
+                                router.push(.locationAccess)
                             } label: {
                                 HStack {
                                     Text("Get Started")

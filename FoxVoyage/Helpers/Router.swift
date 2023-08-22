@@ -10,6 +10,7 @@ import SwiftUI
 enum Route: Hashable{
     case onboarding
     case galleryAccess
+    case locationAccess
     case explore
     case infoLocation
     case infoLocationSearch(locationManager: LocationManager)
