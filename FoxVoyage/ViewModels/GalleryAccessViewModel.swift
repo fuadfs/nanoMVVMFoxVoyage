@@ -8,7 +8,7 @@
 import Foundation
 import Photos
 
-class GalleryAccess: ObservableObject {
+class GalleryAccessViewModel: ObservableObject {
     
     func requestGalleryAccess(completion: @escaping (Bool) -> Void) {
         PHPhotoLibrary.requestAuthorization { status in

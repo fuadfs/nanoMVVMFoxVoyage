@@ -39,10 +39,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate, MK
     
     @Published var placeToCheckIn: String = ""
     @Published var isCheckedIn: Bool = false
-    
-    
-    
-    
+  
     var locationCoordinatesArray: [CLLocationCoordinate2D]  = []
     var identifiersArray: [String] = []
     

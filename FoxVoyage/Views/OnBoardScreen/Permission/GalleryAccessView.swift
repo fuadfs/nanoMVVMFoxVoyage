@@ -10,7 +10,7 @@ import Photos
 
 struct GalleryAccessView: View {
     @State private var isGalleryAccessGranted = false
-    @ObservedObject var galleryAcces: GalleryAccess
+    @ObservedObject var galleryAcces: GalleryAccessViewModel
     
     var body: some View {
         VStack{
@@ -57,6 +57,6 @@ struct GalleryAccessView: View {
 
 struct GalleryAccessView_Previews: PreviewProvider {
     static var previews: some View {
-        GalleryAccessView(galleryAcces: GalleryAccess())
+        GalleryAccessView(galleryAcces: GalleryAccessViewModel())
     }
 }

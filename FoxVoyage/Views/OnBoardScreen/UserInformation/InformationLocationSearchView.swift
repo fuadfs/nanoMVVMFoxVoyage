@@ -27,7 +27,7 @@ struct InformationLocationSearchView: View {
                     .frame(maxWidth: 250, alignment: .leading)
                     .foregroundColor(Color("Redish400"))
                 
-//                if !searchText.isEmpty {
+                if !locationManager.searchText.isEmpty {
                     HStack {
                         Spacer()
                         Button {
@@ -38,7 +38,7 @@ struct InformationLocationSearchView: View {
                         .foregroundColor(.secondary)
                         .padding(.trailing, 4)
                     }
-//                }
+                }
             }
             .padding(.horizontal, 24)
             .padding(.vertical, 0)
